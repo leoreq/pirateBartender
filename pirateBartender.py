@@ -53,7 +53,6 @@ def askDrink():
                 print("Not CLear... Just Say YES or NO...so....")
                 print(type(clientPreference))
 
-
 def mixDrink():
     """This funciton will take the drinking style , use the taste key to access ingredient dictionary and randomly mix the ingredientes for the coctail"""
     print("Lets start mixn ya drinkss")
@@ -79,8 +78,8 @@ def anotherDrink():
                 return(False)     
         else: 
             print("Not CLear... Just Say YES or NO...so....")
-               
-if __name__ == '__main__':
+
+def main():
     printPirate()
     anotherDrinkStatus=True
     while anotherDrinkStatus:
@@ -88,4 +87,7 @@ if __name__ == '__main__':
         mixDrink()
         serveDrink()
         anotherDrinkStatus=anotherDrink()
+        
+if __name__ == '__main__':
+    main()
         
